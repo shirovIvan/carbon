@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>EcoPass</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta name="format-detection" content="telephone=no">
+    <link href="/favicon.png" rel="shortcut icon" type="image/png">
+    <!-- styles-->
+    <link rel="stylesheet" href="assets/css/libs.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!--js-->
+    <script src="assets/js/libs.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+    <!--[if lt IE 9]>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <aside class="aside js-aside">
+                <div class="aside__pannel">
+                    <div class="logo">
+                        <img src="./assets/img/dashboard/icon/logo.png" alt="Logo">
+                        <div class="logo-text">
+                            Carbon Tracker
+                        </div>
+                    </div>
+                    <nav class="navbar__aside">
+                        <ul class="menu__items">
+                            <div class="line"></div>
+                            <div class="menu-link-block">
+                                <a class="link" href="./index.html">
+                                    <li class="menu__item active"><svg class="svg__icon svg__active" width="13" height="13"
+                                        viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M10.875 0.875H2.125C1.4375 0.875 0.875 1.4375 0.875 2.125V10.875C0.875 11.5625 1.4375 12.125 2.125 12.125H10.875C11.5625 12.125 12.125 11.5625 12.125 10.875V2.125C12.125 1.4375 11.5625 0.875 10.875 0.875ZM10.875 10.875H2.125V8.0125L2.74375 8.63125L5.24375 6.13125L7.74375 8.63125L10.2437 6.1375L10.875 6.76875V10.875ZM10.875 4.99375L10.2437 4.3625L7.74375 6.86875L5.24375 4.36875L2.74375 6.86875L2.125 6.24375V2.125H10.875V4.99375Z" />
+                                    </svg>
+                                    Admin
+                                </li>
+                                </a>
+                                <div class="rectangle"></div>
+                            </div>
+                            <div class="line"></div>
+                            <a href="">
+                                <li class="menu__item"><svg class="svg__icon" width="11" height="13" viewBox="0 0 11 13"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3 9H8V10.25H3V9ZM3 6.5H8V7.75H3V6.5ZM6.75 0.25H1.75C1.0625 0.25 0.5 0.8125 0.5 1.5V11.5C0.5 12.1875 1.05625 12.75 1.74375 12.75H9.25C9.9375 12.75 10.5 12.1875 10.5 11.5V4L6.75 0.25ZM9.25 11.5H1.75V1.5H6.125V4.625H9.25V11.5Z" />
+                                </svg>
+                                Data inputs</li>
+                            </a>
+                            <div class="line"></div>
+                            <a href="./index.html">
+                                <li class="menu__item"><svg class="svg__icon" width="13" height="13"
+                                    viewBox="0 0 13 13" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.875 0.875H2.125C1.4375 0.875 0.875 1.4375 0.875 2.125V10.875C0.875 11.5625 1.4375 12.125 2.125 12.125H10.875C11.5625 12.125 12.125 11.5625 12.125 10.875V2.125C12.125 1.4375 11.5625 0.875 10.875 0.875ZM10.875 10.875H2.125V8.0125L2.74375 8.63125L5.24375 6.13125L7.74375 8.63125L10.2437 6.1375L10.875 6.76875V10.875ZM10.875 4.99375L10.2437 4.3625L7.74375 6.86875L5.24375 4.36875L2.74375 6.86875L2.125 6.24375V2.125H10.875V4.99375Z" />
+                                </svg>
+                                Dashboard</li>
+                            </a>
+                            <div class="line"></div>
+                            <a href="">
+                                <li class="menu__item"><svg class="svg__icon" width="13" height="15" viewBox="0 0 13 15"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M9 0.625H1.5C0.8125 0.625 0.25 1.1875 0.25 1.875V10.625H1.5V1.875H9V0.625ZM8.375 3.125H4C3.3125 3.125 2.75625 3.6875 2.75625 4.375L2.75 13.125C2.75 13.8125 3.30625 14.375 3.99375 14.375H10.875C11.5625 14.375 12.125 13.8125 12.125 13.125V6.875L8.375 3.125ZM4 13.125V4.375H7.75V7.5H10.875V13.125H4Z" />
+                                </svg>
+                                Reports</li>
+                            </a>
+                            <div class="line"></div>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="aside__trigger">
+                    <button class="burger burger_aside js-burger" data-target=".js-aside"><span
+                            class="burger__spin"></span>
+                    </button>
+                </div>
+            </aside>
+            <main class="main">
+                <div class="topline">
+                    <div class="topline__left topline__left_grow">
+                        <div class="nav-group">
+                            <div class="nav-group__mnu js-main-nav">
+                                <nav class="main-nav">
+                                    <div class="header__navbar header-menu">
+                                        <ul class="header-menu-items">
+                                            <li class="header-menu-item header-item-active">Organizations</li>
+                                            <li class="header-menu-item">Sources of emissions</li>
+                                            <li class="header-menu-item">
+                                                <div class="main-nav__link main-nav__link_container active">
+                                                    <div class="dropdown dropdown_mnu js-dropdown">
+                                                      <button class="dropdown__label">
+                                                        <div class="dropdown__txt">Справочники</div>
+                                                      </button>
+                                                      <div class="dropdown__dropdown"> 
+                                                        <ul class="dropdown__list">
+                                                          <li class="dropdown__itm"> <a class="dropdown__link" href="okved.html">ОКВЕД</a></li>
+                                                          <li class="dropdown__itm"> <a class="dropdown__link active" href="fuel.html">Топливо и выбросы</a></li>
+                                                          <li class="dropdown__itm"> <a class="dropdown__link" href="formulas.html">Формулы</a></li>
+                                                        </ul>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="nav-group__burger">
+                                <button class="burger js-burger" data-target=".js-main-nav"><span
+                                        class="burger__spin"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="topline__rigth">
+                        <div class="user-container">
+                            <div class="profile">
+                                <div class="profile-menu">
+                                    <img src="./assets/img/dashboard/icon/menu.png" alt="">
+                                </div>
+                                <div class="profile-info">
+                                    <img src="./assets/img/dashboard/icon/profile.png" alt="">
+                                </div>
+                                <div class="profile-descr">
+                                    <div class="profile-descr-role">
+                                        Administrator
+                                    </div>
+                                    <div class="profile-descr-name">
+                                        Eastwood C.S.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="block__container">
+                    <div class="block__title">Organizations</div>
+                    <div class="block__content">
+                        <div class="block__content-img"><img src="./assets/img/organizations/organizationsicn.svg" alt=""></div>
+                        <div class="block__content-title">Unfortunately, you have not added any organization yet. Let's start?</div>
+                        <a href="./organizationcreate.html" class="block__content-btn"><div class="block__content-btn_text">Create Organization</div></a>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+</body>
+
+</html>
