@@ -1,0 +1,5 @@
+name,markerType,positionAdmin,positionManager,positionOperator,id,parentId
+ООО «Газпром энергохолдинг»,type-1,А,Р,,0-1,,
+ПАО «Мосэнерго»,type-2,А,Р,,0-2,0-1,
+ТЭЦ-8,type-3,,Р,О,0-3,0-2,
+ГЭС-1,type-2,,Р,О,0-3,0-2,

@@ -1,9 +1,7 @@
 // "use strict";
 document.addEventListener("DOMContentLoaded", function (e) {
   console.log("app.js");
-    /*-------LOGIN.VAL-----*/
 
-    /*--------------------*/
   function tooggleActive(el) {
     if (!document.getElementsByClassName(el)) return;
 

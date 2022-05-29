@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         credits: {
             text: 't. CO2eq.',
             color: '#AFB1C2',
+            href: '',
             position: {
                 x: -15,
                 y: -260
@@ -83,6 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
           credits: {
             text: 't. CO2eq.',
             color: '#AFB1C2',
+            href: '',
             position: {
                 x: -22,
                 y: -420
@@ -152,6 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
               credits: {
                 text: 't. CO2eq.',
                 color: '#AFB1C2',
+                href: '',
                 position: {
                     x: -22,
                     y: -260
@@ -223,6 +226,7 @@ document.addEventListener('DOMContentLoaded', () => {
           credits: {
             text: 't. CO2eq.',
             color: '#AFB1C2',
+            href: '',
             position: {
                 x: -22,
                 y: -240
@@ -292,6 +296,7 @@ document.addEventListener('DOMContentLoaded', () => {
           credits: {
             text: 't. CO2eq.',
             color: '#AFB1C2',
+            href: '',
             position: {
                 x: -22,
                 y: -240
@@ -344,89 +349,105 @@ document.addEventListener('DOMContentLoaded', () => {
           }, 
         ],
         
-    });
-    
+    });   
     Highcharts.chart('circle', {
         chart: {
           plotBackgroundColor: null,
           plotBorderWidth: null,
           plotShadow: false,
-          type: 'pie'
+          type: 'pie',
         },
         title: {
           text: 'Scope 1 GHG emissions, % ',
           align: 'left',
         },
+        
+        credits: {
+          text: 't. CO2eq.',
+          color: '#AFB1C2',
+          href: '',
+          position: {
+              x: -22,
+              y: -460 
+          },
+          style: {
+            color: '#AFB1C2',
+            fontSize: '13px',
+       }
+      },
         tooltip: {
-            backgroundColor: '#FFFFFF',
-            borderColor: '#fff',
-            borderRadius: 5,
-            style: {
-                color: '#333333',
-            },
-            formatter() {
-                return `<br/>
-                <strong>${this.y}k<strong/>`
-            }
+          animation: true,
+          borderWidth: 0,    
+          backgroundColor: 'none',
+          shadow: false,
+          align: 'right',
+          pointFormat: '<span style="font-size:2em; color: #333333; font-weight: bold">{point.y}</span>',
+          positioner: function (labelWidth) {
+            return {
+              x: (this.chart.chartWidth - labelWidth) / 2,
+              y: (this.chart.plotHeight / 2) + 15
+            };
+          }
         },
         accessibility: {
           point: {
             valueSuffix: '%'
           }
         },
+        
         plotOptions: {
           pie: {innerSize: '80%',
-            allowPointSelect: true,
+            allowPointSelect: false,
             cursor: 'pointer',
+            
             dataLabels: {
-              enabled: false
+              enabled: false,
             },
-            showInLegend: true
-          }
-        },
-        credits: {
-            text: 't. CO2eq.',
-            color: '#AFB1C2',
-            position: {
-                x: -22,
-                y: -465
+            
+            showInLegend: {
+              enabled: true,
             },
-            style: {
-                color: '#AFB1C2',
-                fontSize: '13px',
-           }
+            positioner: function (labelWidth) {
+              return {
+                x: (this.chart.chartWidth - labelWidth) / 2,
+                y: (this.chart.plotHeight / 2) + 15
+              };
+            }
+          },
         },
         series: [{
           name: 'CO2',
           colorByPoint: true,
           data: [{
             name: 'CO2 (Carbon dioxide)',
-            y: 41.41,
+            y: 41.412,
             color: '#46BCC2',
           }, {
             name: 'CH4 (Methan)',
-            y: 20.84,
+            y: 20.841,
             color: '#9ACC35'
           }, {
             name: '(HFCs) Hydrofluorocarbons',
-            y: 14.85,
+            y: 14.855,
             color: '#FF974A'
           }, {
             name: 'N2O (Nitrous oxide)',
-            y: 10.67,
+            y: 10.673,
             color: '#DF5D60'
           }, {
             name: 'NF3 (Nitrogen trifluoride)',
-            y: 10.18,
+            y: 10.182,
             color: '#F3A1E1'
           }, {
             name: 'SF6 (Sulfur hexafluoride)',
-            y: 7.05,
+            y: 7.051,
             color: '#B55DDF'
           }]
         }]
+        
       });
     });
+    
 document.addEventListener('DOMContentLoaded', () =>{
   Highcharts.chart('actual', {
     chart: {
@@ -435,6 +456,7 @@ document.addEventListener('DOMContentLoaded', () =>{
     credits: {
         text: 't. CO2eq.',
         color: '#AFB1C2',
+        href: '',
         position: {
             x: -22,
             y: -420
@@ -499,4 +521,4 @@ document.addEventListener('DOMContentLoaded', () =>{
       } 
     }]
   });
-})
+})  
